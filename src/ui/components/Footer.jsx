@@ -1,22 +1,33 @@
-import { GitHub, LinkedIn } from "@mui/icons-material"
-import { Button, Grid, Link } from "@mui/material"
+import { Link as Redirect, useLocation } from "react-router-dom"
+import { GitHub, Home, HomeRounded, LinkedIn } from "@mui/icons-material"
+import { Button, ButtonBase, Grid, Link } from "@mui/material"
 
-
+// https://github.com/LucianoR23
 export const Footer = () => {
+
+    const location = useLocation()
+    const actualPath = location.pathname
+
     return (
-        <Grid container direction='row' justifyContent="space-evenly" sx={{ height: '', width: '100%' }} >
+        <Grid container direction='row' alignItems='center' justifyContent="space-evenly" sx={{ /* height: '', */ width: '100%' }} >
 
-            <Button sx={{ padding: 1 }}>
-                <Link rel="noopener" target="_blank" href='https://github.com/LucianoR23'>
-                    <GitHub fontSize="large" sx={{ color: 'primary.light', position: 'fixed' }} />
-                </Link>
-            </Button>
+            <ButtonBase sx={{ padding: 0 }} component={Link} rel="noopener" target="_blank" href='https://github.com/LucianoR23' >
+                <GitHub fontSize="large" sx={{ color: 'primary.light' }} />
+            </ButtonBase>
 
-            <Button sx={{ padding: 1 }}>
-                <Link rel="noopener" target="_blank" href='https://www.linkedin.com/in/luciano-rodriguez-273809251/'>
-                    <LinkedIn fontSize="large" sx={{ color: 'primary.light', position: 'fixed' }} />
-                </Link>
-            </Button>
+            {
+                ( actualPath !== '/home' )
+                ? (
+                    <ButtonBase sx={{ padding: 0 }} component={ Redirect } to='/home'>
+                        <HomeRounded fontSize="large" sx={{ color: 'primary.light' }} />
+                    </ButtonBase>
+                )
+                : null
+            }
+            
+            <ButtonBase sx={{ padding: 0 }} component={Link} rel="noopener" target="_blank" href='https://www.linkedin.com/in/luciano-rodriguez-273809251/' >
+                <LinkedIn fontSize="large" sx={{ color: 'primary.light' }} />
+            </ButtonBase>
 
         </Grid>
     )

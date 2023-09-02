@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
     {
         path: "/about",
         errorElement: <ErrorPage />,
-        element: <PortfolioLayout />,
+        element: <AboutMe />,
     },
     {
         path: '/projects',

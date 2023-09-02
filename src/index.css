@@ -1,0 +1,10 @@
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#foto-perfil {
+    object-fit: contain;
+    width: 35%;
+    border-radius: 1rem;
+}

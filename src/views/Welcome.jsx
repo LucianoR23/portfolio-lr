@@ -33,9 +33,9 @@ export const Welcome = () => {
     return (
         <Box className={ classNameWindow } display='flex' justifyContent='center' alignItems='center' sx={{ height: '100vh', width: '100%', objectFit: 'contain' }} >
             <video autoPlay muted loop style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
-                <source src="../../video/fondo-pc.mp4" type="video/mp4" />
+                <source src="../../video/fondo-mundo.mp4" type="video/mp4" />
             </video>
-            <Typography className={className} variant="h1" color='primary.light' sx={{ fontWeight: 500}}>Welcome</Typography>
+            <Typography className={className} variant="h1" color='primary.main' sx={{ fontWeight: 500}}>Welcome</Typography>
         </Box>
     )
 }
