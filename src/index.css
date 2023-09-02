@@ -8,3 +8,18 @@ body::-webkit-scrollbar {
     width: 35%;
     border-radius: 1rem;
 }
+
+#img-projects {
+    width: 20rem;
+    border-radius: 5rem;
+}
+
+#img-cert {
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+    #img-projects {
+        width: 15rem;
+    }
+}

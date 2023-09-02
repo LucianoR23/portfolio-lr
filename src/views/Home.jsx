@@ -1,9 +1,14 @@
-import { Button, Grid } from "@mui/material"
+import { Button, Grid, useMediaQuery } from "@mui/material"
 import { Footer } from "../ui/components/Footer"
 import { ButtonsPages } from "../ui/components/ButtonsPages"
+import { useTheme } from "@emotion/react";
 
 
 export const Home = () => {
+
+    const theme = useTheme();
+    const isMd = useMediaQuery(theme.breakpoints.up('md'));
+
     return (
         <Grid container direction='column' className="animate__fadeIn animate__animated" sx={{ height: '100vh', width: '100%', objectFit: 'contain' }}>
 
@@ -17,19 +22,19 @@ export const Home = () => {
 
                     <Grid item xs={ 12 } md={ 3 } >
                         <Grid container alignItems='center' justifyContent='center'>
-                            <ButtonsPages pad={ 5 } fontSi={ 150 } varian='h4' name='About me' />
+                            <ButtonsPages pad={ 5 } fontSi={ isMd ? 150 : 50 } varian={isMd ? 'h4' : 'subtitle1'} name='About me' />
                         </Grid>
                     </Grid>
 
                     <Grid item xs={ 12 } md={ 3 } >
                         <Grid container alignItems='center' justifyContent='center'>
-                            <ButtonsPages pad={ 5 } fontSi={ 150 } varian='h4' name='Projects' />
+                            <ButtonsPages pad={ 5 } fontSi={ isMd ? 150 : 50 } varian={isMd ? 'h4' : 'subtitle1'} name='Projects' />
                         </Grid>
                     </Grid>
 
                     <Grid item xs={ 12 } md={ 3 } >
                         <Grid container alignItems='center' justifyContent='center'>
-                            <ButtonsPages pad={ 5 } fontSi={ 150 } varian='h4' name='Knowledge' />
+                            <ButtonsPages pad={ 5 } fontSi={ isMd ? 150 : 50 } varian={isMd ? 'h4' : 'subtitle1'} name='Knowledge' />
                         </Grid>
                     </Grid>
 

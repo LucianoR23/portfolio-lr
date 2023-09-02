@@ -4,14 +4,14 @@ import { Button, Grid, Link, Typography } from "@mui/material"
 import { Icon, redirec } from "../../helpers"
 
 
-export const ButtonsPages = ({ pad, fontSi, varian, name }) => {
+export const ButtonsPages = ({ pad, fontSi, varian, name, backC = 'transparent' }) => {
 
     const buttonIcon = Icon(name, fontSi)
 
     const redirection = redirec(name)
 
     return (
-        <Button sx={{ ':hover': { backgroundColor: 'primary.dark', opacity: 0.6 }, borderRadius: 4 }}>
+        <Button id="btn-menu" sx={{ ':hover': { backgroundColor: 'primary.dark', opacity: 0.7 }, borderRadius: 4, opacity: { md: 1, xs: 0.9 }, backgroundColor: { xs: backC/* , md: backC */ } }}>
             <Link underline="none" sx={{ padding: pad }} component={ Redirect } to={ redirection } >
                 <Grid container direction='column' alignItems='center' >
                     {

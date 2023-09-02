@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material"
+import { useTheme } from "@emotion/react";
+import { Box, Typography, useMediaQuery } from "@mui/material"
 import { useEffect, useState } from "react";
 
 
@@ -6,6 +7,9 @@ export const Welcome = () => {
 
     const [className, setClassName] = useState('animate__animated animate__zoomIn animate__slower');
     const [classNameWindow, setClassNameWindow] = useState('');
+
+    const theme = useTheme();
+    const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -35,7 +39,7 @@ export const Welcome = () => {
             <video autoPlay muted loop style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
                 <source src="../../video/fondo-mundo.mp4" type="video/mp4" />
             </video>
-            <Typography className={className} variant="h1" color='primary.main' sx={{ fontWeight: 500}}>Welcome</Typography>
+            <Typography className={className} variant={isMd ? 'h1' : 'h2'} color='primary.main' sx={{ fontWeight: 500}}>Welcome</Typography>
         </Box>
     )
 }
