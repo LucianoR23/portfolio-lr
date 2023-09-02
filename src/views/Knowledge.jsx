@@ -45,17 +45,17 @@ export const Knowledge = () => {
                     <ImageList sx={{ width: '72%', height: '80%', backgroundColor: 'background.default', padding: 3, borderRadius: 12 }}  >
                         <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1693419035/portfolio/Certificado_JavaScript_wi2ghc.jpg' >
                             <ImageListItem>
-                                <img id="img-cert" src="../../images/certificado-js.jpg" alt="certificado-js" />
+                                <img className="img-cert" src="../../images/certificado-js.jpg" alt="certificado-js" />
                             </ImageListItem>
                         </ButtonBase>
                         <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1693623894/portfolio/certificado-ts_df1krb.jpg' >
                             <ImageListItem>
-                                <img id="img-cert" src="../../images/certificado-ts.jpg" alt="certificado-ts" />
+                                <img className="img-cert" src="../../images/certificado-ts.jpg" alt="certificado-ts" />
                             </ImageListItem>
                         </ButtonBase>
                         <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1693623894/portfolio/certificado-node_tnev3w.jpg' >
                             <ImageListItem>
-                                <img id="img-cert" src="../../images/certificado-node.jpg" alt="certificado-node" />
+                                <img className="img-cert" src="../../images/certificado-node.jpg" alt="certificado-node" />
                             </ImageListItem>
                         </ButtonBase>
                     </ImageList>
