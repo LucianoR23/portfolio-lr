@@ -1,12 +1,14 @@
 import { useTheme } from "@emotion/react";
 import { Box, Typography, useMediaQuery } from "@mui/material"
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export const Welcome = () => {
 
     const [className, setClassName] = useState('animate__animated animate__zoomIn animate__slower');
     const [classNameWindow, setClassNameWindow] = useState('');
+    const navigate = useNavigate()
 
     const theme = useTheme();
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
@@ -30,7 +32,7 @@ export const Welcome = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            window.location.href = '/home';
+            navigate('/home')
         }, 6000);
     }, []);
 

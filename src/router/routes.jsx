@@ -1,11 +1,10 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter, createHashRouter } from "react-router-dom";
 import { ErrorPage } from "../ui/pages/ErrorPage";
 import { AboutMe, Home, Knowledge, Projects } from "../views";
 import { Welcome } from "../views/Welcome";
-import { PortfolioLayout } from "../layout/PortfolioLayout";
 
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         errorElement: <ErrorPage />,
