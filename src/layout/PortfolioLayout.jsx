@@ -52,11 +52,11 @@ export const PortfolioLayout = ({ children }) => {
 
   return (
 
-          <Box onWheel={ handleWheel } sx={{ height: deviceH, width: '100%', objectFit: 'contain' }} >
+          <Box onWheel={ handleWheel } sx={{ height: deviceH, width: '100%', objectFit: 'contain' }} component='main' >
             <video playsInline={true} autoPlay={false} muted style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
                 <source src="../../video/fondo-mundo.mp4" type="video/mp4" />
             </video>
-            <Box className='animate__animated animate__backInUp'  component='main' sx={{ p: 3, height: '85vh',  }} display='flex' flexWrap='wrap' alignContent='space-between'>
+            <Box className='animate__animated animate__backInUp'  sx={{ p: 3, height: { xs: '85vh', sm: '90vh' },  }} display='flex' flexWrap='wrap' alignContent='space-between'>
 
               <AccordionMenu { ...prop } />
                 <Toolbar />
