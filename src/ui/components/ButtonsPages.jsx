@@ -11,7 +11,7 @@ export const ButtonsPages = ({ pad, fontSi, varian, name, backC = 'transparent' 
     const redirection = redirec(name)
 
     return (
-        <Button id="btn-menu" sx={{ ':hover': { backgroundColor: 'primary.dark', opacity: 0.7 }, borderRadius: 4, opacity: { md: 1, xs: 0.9 }, backgroundColor: { xs: backC/* , md: backC */ } }}>
+        <Button id="btn-menu" sx={{ ':hover': { backgroundColor: 'primary.dark', opacity: 0.7 }, borderRadius: 4, opacity: { md: 1, xs: 0.9 }, backgroundColor: { xs: backC } }}>
             <Link underline="none" sx={{ padding: pad }} component={ Redirect } to={ redirection } >
                 <Grid container direction='column' alignItems='center' >
                     {

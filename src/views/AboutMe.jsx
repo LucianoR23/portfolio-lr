@@ -21,7 +21,7 @@ export const AboutMe = () => {
                 <Grid item sx={{ height: { md: '80%', xs: '30%'}, width: { md: '50%', xs: 360} }} display='flex' justifyContent='center' alignItems='center' >
                     <img id="foto-perfil" src="../../images/lr.jpg" alt="Luciano Rodriguez" />
                 </Grid>
-                <Grid item sx={{ height: { md: '80%', xs: '30%'}, width: { md: '50%', xs: '100%'}, mt: { xs: 12, md: 0 } }} display='flex' justifyContent='center' alignItems='center' >
+                <Grid item sx={{ height: { md: '80%', xs: '30%'}, width: { md: '50%', xs: '100%'}, mt: { xs: 10, md: 0 } }} display='flex' justifyContent='center' alignItems='center' >
                     <Paper sx={{ width: '70%', height: { md: '55%', xs: '170%'}, backgroundColor: 'background.default', padding: { xs: 2, md: 4 }, borderRadius: 12, opacity: 0.9 }}  >
                         <Typography variant={isMd ? 'h5' : 'subtitle1'} color='primary.light'>{ isMd ? text[0] : text[1] }</Typography>
                     </Paper>
