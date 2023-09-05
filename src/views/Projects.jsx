@@ -22,7 +22,7 @@ export const Projects = () => {
                     />
                     <ImageListItemBar
                         title={image.title}
-                        sx={{ width: { md: '20rem', xs: '15rem' }, mb: 2 }}
+                        sx={{ width: { md: '15rem', xs: '10rem' }, mb: 2, ml: 5, borderRadius: '1rem', backgroundColor: 'rgba(0, 0, 0, 0.30)' }}
                         actionIcon={
                         <ButtonBase
                             sx={{ color: 'rgba(255, 255, 255, 0.54)', mr: 2 }}

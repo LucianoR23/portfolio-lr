@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -11,7 +15,8 @@ body::-webkit-scrollbar {
 
 #img-projects {
     width: 20rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
+    opacity: 0.8;
 }
 
 .img-cert {

@@ -1,6 +1,5 @@
-import { useNavigate } from "react-router-dom"
 import { PortfolioLayout } from "../layout/PortfolioLayout"
-import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material"
+import { Grid, Paper, Typography, useMediaQuery } from "@mui/material"
 import { useTheme } from "@emotion/react";
 
 
@@ -13,10 +12,11 @@ export const AboutMe = () => {
         "Hi, my name is Luciano and I'm 25 years old. Since childhood I loved technology and the previous year found out about this world of programming, so I started learning online in YouTube, CoderHouse and Udemy, rigth now I'm studying the carreer Certified Tech Developer at Digital House. At the end of the website you can see my current knowledge and my future goals because I want to keep learning and hope to find a place to obtain working experience.",
         "Hi, my name is Luciano and I'm 25 years old. I started learning online in YouTube, CoderHouse and Udemy, rigth now I'm studying the carreer Certified Tech Developer at Digital House. At the end of the website you can see my current knowledge and my future goals."
     ]
+    
 
     return (
         <PortfolioLayout>
-            <Grid container direction='column' alignItems='center' justifyContent='center' sx={{ height: '100%', width: '100%', justifyContent: { md: 'center', xs: '' } }}>
+            <Grid container direction='column' alignItems='center' justifyContent='center' sx={{ height: '100%', width: '100%', justifyContent: { md: 'center' } }}>
 
                 <Grid item sx={{ height: { md: '80%', xs: '30%'}, width: { md: '50%', xs: 360} }} display='flex' justifyContent='center' alignItems='center' >
                     <img id="foto-perfil" src="../../images/lr.jpg" alt="Luciano Rodriguez" />
