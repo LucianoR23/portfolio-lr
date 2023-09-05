@@ -12,7 +12,7 @@ export const Home = () => {
     return (
         <Grid container direction='column' className="animate__fadeIn animate__animated" sx={{ height: '100vh', width: '100%', objectFit: 'contain' }}>
 
-            <video autoPlay muted loop style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
+            <video autoPlay playsInline={ true } muted loop style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}>
                 <source src="../../video/fondo-mundo.mp4" type="video/mp4" />
             </video>
 
