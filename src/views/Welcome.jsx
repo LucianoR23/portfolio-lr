@@ -1,7 +1,7 @@
-import { useTheme } from "@emotion/react";
-import { Box, Typography, useMediaQuery } from "@mui/material"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "@emotion/react";
+import { Box, Typography, useMediaQuery } from "@mui/material"
 
 
 export const Welcome = () => {

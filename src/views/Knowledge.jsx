@@ -10,7 +10,7 @@ export const Knowledge = () => {
 
     return (
         <PortfolioLayout>
-            <Grid container direction='column' alignItems='center' wrap={ isMd ? 'wrap' : 'nowrap' } justifyContent='center' sx={{ height: '100%', width: '100%'/* , pb: 30 */ }}>
+            <Grid container direction='column' alignItems='center' wrap={ isMd ? 'wrap' : 'nowrap' } justifyContent='center' sx={{ height: '100%', width: '100%' }}>
 
                 <Grid item sx={{ height: '80%', width: { md: '50%'} }} gap={2} display='flex' >
                     <Grid  container direction='column' gap={8} justifyContent='center' alignItems='center'>
@@ -41,7 +41,7 @@ export const Knowledge = () => {
                     </Grid>
                 </Grid>
 
-                <Grid item sx={{ height: '80%', width: { md: '50%', xs: '100%' }/* , display: { xs: 'none', md: 'flex' } */ }} display='flex' justifyContent='center' alignItems='center' >
+                <Grid item sx={{ height: '80%', width: { md: '50%', xs: '100%' } }} display='flex' justifyContent='center' alignItems='center' >
                     <ImageList sx={{ width: '72%', height: '80%', backgroundColor: 'background.default', padding: 3, borderRadius: 12 }}  >
                         <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1693419035/portfolio/Certificado_JavaScript_wi2ghc.jpg' >
                             <ImageListItem>

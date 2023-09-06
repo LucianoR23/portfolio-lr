@@ -1,10 +1,12 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
-import { Box, Toolbar } from '@mui/material'
+import { Avatar, Box, Grid, Toolbar, Typography, useMediaQuery } from '@mui/material'
 import { AccordionMenu } from '../ui/components/Accordion'
 import { Footer } from '../ui/components/Footer'
 import { buttonProp, scrollTo } from '../helpers'
 import { activateScroll, disableScroll } from '../store/views/viewsSlice'
+import { useTheme } from '@emotion/react'
+import { actualView } from '../helpers/actualView'
 
 
 export const PortfolioLayout = ({ children }) => {
@@ -50,6 +52,12 @@ export const PortfolioLayout = ({ children }) => {
 
   };
 
+  const name = actualView(actualPath)
+
+  const theme = useTheme();
+  const isSm = useMediaQuery(theme.breakpoints.up('sm'));
+
+
   return (
 
           <Box onWheel={ handleWheel } sx={{ height: deviceH, width: '100%', objectFit: 'contain' }} component='main' >
@@ -58,7 +66,22 @@ export const PortfolioLayout = ({ children }) => {
             </video>
             <Box className='animate__animated animate__backInUp'  sx={{ p: 3, height: { xs: '85vh', sm: '90vh' },  }} display='flex' flexWrap='wrap' alignContent='space-between'>
 
+
+
               <AccordionMenu { ...prop } />
+                {
+                  isSm
+                  ? (
+                    <Box display='flex' sx={{ width: '10rem', position: 'absolute', right: 25 }} alignItems='center' justifyContent='space-between' >
+                      <Avatar alt='Luciano Rodriguez' src='../../images/lr.jpg' />
+                      <Typography sx={{ color: 'primary.light' }}>{ name }</Typography>
+                    </Box>
+                  )
+                  : null
+                }
+
+                
+                
                 <Toolbar />
 
                 { children }
