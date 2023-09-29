@@ -56,4 +56,10 @@ export const infoImg = [
         url: 'https://heroes-spa-luciano.netlify.app/#/marvel',
         description: "It is a single page application created with React, where it shows heroes from Marvel or DC, and also allows you to search for heroes by name. You can also click on a hero and see more information about it.",
     },
+    {
+        img: '../../images/calendar-app.jpg',
+        title: 'Calendar App',
+        url: 'https://calendar-app-delta-seven.vercel.app',
+        description: "A calendar web application, in which you have to register similar to the journal (no real email necessary), and each user has their own events that they have to create, you can also modify and delete them.",
+    },
 ]

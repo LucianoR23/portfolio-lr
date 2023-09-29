@@ -1,8 +1,9 @@
 import { createTheme } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { grey, red } from "@mui/material/colors";
 
 export const theme = createTheme({
     palette: {
+        mode: 'dark',
         primary: {
             main: '#384E60',
             dark: '#030706',
@@ -26,5 +27,15 @@ export const theme = createTheme({
             'Kanit',
             'Roboto',
         ].join(','),
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+            xxl: 2400,
+        },
     },
 })

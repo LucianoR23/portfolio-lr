@@ -5,7 +5,7 @@ import { theme } from "./theme"
 export const AppTheme = ({ children }) => {
     return (
         <ThemeProvider theme={ theme }>
-            <CssBaseline />
+            <CssBaseline enableColorScheme />
             { children }
         </ThemeProvider>
     )

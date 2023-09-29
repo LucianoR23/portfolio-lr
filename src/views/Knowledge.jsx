@@ -14,7 +14,7 @@ export const Knowledge = () => {
 
                 <Grid item sx={{ height: '80%', width: { md: '50%'} }} gap={2} display='flex' >
                     <Grid  container direction='column' gap={8} justifyContent='center' alignItems='center'>
-                        <Paper sx={{ width: '80%', height: { md: '28%', xs: '80%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9 }}  >
+                        <Paper sx={{ width: '80%', height: { md: '31%', xs: '80%', xxl: '20%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9 }}  >
                             <Typography variant={ isMd ? "subtitle1" : 'body2' } color='primary.light'>
                                 Digital House, Online — Certified Tech Developer
                                 <br />
@@ -25,7 +25,7 @@ export const Knowledge = () => {
                                 Materias en curso: Programacion orientada a objetos - Testing 1 - Taller Design Thinking
                             </Typography>
                         </Paper>
-                        <Paper sx={{ width: '80%', height: '30%', backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9, display: { xs: 'none', md: 'flex' } }}  >
+                        <Paper sx={{ width: '80%', height: { md: '31%', xxl: '20%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9, display: { xs: 'none', md: 'flex' } }}  >
                             <Typography variant="subtitle1" color='primary.light'>
                                 Udemy, Online — Certificación JavaScript - TypeScript - Node
                                 <br />
@@ -56,6 +56,11 @@ export const Knowledge = () => {
                         <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1693623894/portfolio/certificado-node_tnev3w.jpg' >
                             <ImageListItem>
                                 <img className="img-cert" src="../../images/certificado-node.jpg" alt="certificado-node" />
+                            </ImageListItem>
+                        </ButtonBase>
+                        <ButtonBase component={ Link } rel="noopener" target="_blank" href='https://res.cloudinary.com/luciano-rodriguez/image/upload/v1695999001/portfolio/Certificado-React_tqxtgi.jpg' >
+                            <ImageListItem>
+                                <img className="img-cert" src="../../images/certificado-react.jpg" alt="certificado-react" />
                             </ImageListItem>
                         </ButtonBase>
                     </ImageList>
