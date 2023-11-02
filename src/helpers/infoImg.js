@@ -2,6 +2,37 @@
 
 export const infoImg = [
     {
+        img: '../../images/teslo-shop.jpg',
+        title: 'Teslo Shop - Next',
+        url: 'https://teslo-shop-lucianor.vercel.app/',
+        description: "A complete online store, with login and registration, with the ability to place orders and pay for them (no charge, sandbox mode), and has an administrator area for user maintenance, orders and products (admin@admin.com - 123456).",
+    },
+    {
+        img: '../../images/pokemon-static.jpg',
+        title: 'Pokemon Static - Next',
+        url: 'https://pokemon-static-lemy.vercel.app/',
+        description: "A pokedex style website is only made for one region although it is possible to search for other pokemon by modifying the url, you can enter the page of each pokemon and see its description and also change between light theme and dark theme.",
+    },
+    {
+        img: '../../images/task-manager.jpg',
+        title: 'Task Manager - Next',
+        url: 'https://task-manager-lr.vercel.app/',
+        description: "A task organizer, you can add them and slide them between pending/in progress/finished, you can also click and edit it and also delete it.",
+    },
+    {
+        img: '../../images/calendar-app.jpg',
+        title: 'Calendar App - React',
+        url: 'https://calendar-app-delta-seven.vercel.app',
+        description: "A calendar web application, in which you have to register similar to the journal (no real email necessary), and each user has their own events that they have to create, you can also modify and delete them.",
+    },
+    {
+        img: '../../images/journal.jpg',
+        title: 'Journal React',
+        url: 'https://journal-lemy.vercel.app',
+        description: "It is a web application of a journal of notes, where you must authenticate yourself or register a new account. It allows you to create a new note, giving it a title, a description and you can also add images and save the note. The note will say the date and time it was created and allows you to delete it. This is all saved in Firebase.",
+        featured: true
+    },
+    {
         img: '../../images/blackjack.jpg',
         title: 'Blackjack Game JS',
         url: 'https://lucianor23.github.io/juego-blackjack/',
@@ -38,13 +69,6 @@ export const infoImg = [
         description: "It is a node application where you can see the weather of practically any place in the world. You just have to search for it and it will give you some options according to your search and you must select the one you want. In addition, a history of the last 5 cities is saved in a local database.",
     },
     {
-        img: '../../images/journal.jpg',
-        title: 'Journal React',
-        url: 'https://journal-lemy.vercel.app',
-        description: "It is a web application of a journal of notes, where you must authenticate yourself or register a new account. It allows you to create a new note, giving it a title, a description and you can also add images and save the note. The note will say the date and time it was created and allows you to delete it. This is all saved in Firebase.",
-        featured: true
-    },
-    {
         img: '../../images/gif-app.jpg',
         title: 'Gif app React',
         url: 'https://gif-expert-lemy.netlify.app',
@@ -55,11 +79,5 @@ export const infoImg = [
         title: 'Heroes React',
         url: 'https://heroes-spa-luciano.netlify.app/#/marvel',
         description: "It is a single page application created with React, where it shows heroes from Marvel or DC, and also allows you to search for heroes by name. You can also click on a hero and see more information about it.",
-    },
-    {
-        img: '../../images/calendar-app.jpg',
-        title: 'Calendar App',
-        url: 'https://calendar-app-delta-seven.vercel.app',
-        description: "A calendar web application, in which you have to register similar to the journal (no real email necessary), and each user has their own events that they have to create, you can also modify and delete them.",
     },
 ]

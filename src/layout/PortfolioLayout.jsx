@@ -1,6 +1,7 @@
+
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
-import { Avatar, Box, Grid, Toolbar, Typography, useMediaQuery } from '@mui/material'
+import { Avatar, Box, Toolbar, Typography, useMediaQuery } from '@mui/material'
 import { AccordionMenu } from '../ui/components/Accordion'
 import { Footer } from '../ui/components/Footer'
 import { buttonProp, scrollTo } from '../helpers'

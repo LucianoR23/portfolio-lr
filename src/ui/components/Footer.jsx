@@ -1,6 +1,6 @@
 import { Link as Redirect, useLocation } from "react-router-dom"
-import { GitHub, Home, HomeRounded, LinkedIn } from "@mui/icons-material"
-import { Button, ButtonBase, Grid, Link } from "@mui/material"
+import { GitHub, HomeRounded, LinkedIn } from "@mui/icons-material"
+import { ButtonBase, Grid, Link } from "@mui/material"
 
 // https://github.com/LucianoR23
 export const Footer = () => {
@@ -25,7 +25,7 @@ export const Footer = () => {
                 : null
             }
             
-            <ButtonBase sx={{ padding: 0 }} component={Link} rel="noopener" target="_blank" href='https://www.linkedin.com/in/luciano-rodriguez-273809251/' >
+            <ButtonBase sx={{ padding: 0 }} component={Link} rel="noopener" target="_blank" href='https://www.linkedin.com/in/luciano-rodriguez-dev/' >
                 <LinkedIn fontSize="large" sx={{ color: 'primary.light' }} />
             </ButtonBase>
 
