@@ -9,8 +9,8 @@ export const AboutMe = () => {
     const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
     const text = [
-        "Hi, my name is Luciano and I'm 25 years old. Since childhood I loved technology and the previous year found out about this world of programming, so I started learning online in YouTube, CoderHouse and Udemy, rigth now I'm studying the carreer Certified Tech Developer at Digital House. At the end of the website you can see my current knowledge and my future goals because I want to keep learning and hope to find a place to obtain working experience.",
-        "Hi, my name is Luciano and I'm 25 years old. I started learning online in YouTube, CoderHouse and Udemy, rigth now I'm studying the carreer Certified Tech Developer at Digital House. At the end of the website you can see my current knowledge and my future goals."
+        "Hello, my name is Luciano and I am 27 years old. Since I was young I loved technology and in 2023 I discovered this world of programming, so I started learning online on YouTube, CoderHouse and Udemy, right now I am studying the Vue framework at Udemy. At the end of the website you can see my current knowledge and my future goals because I want to continue learning and I hope to find a place to gain work experience.",
+        "Hello, my name is Luciano and I am 27 years old. I started learning online on YouTube, CoderHouse and Udemy, right now I am studying the Vue framework on Udemy. At the end of the website you will be able to see my current knowledge and my future goals."
     ]
     
 

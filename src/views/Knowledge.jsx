@@ -14,28 +14,31 @@ export const Knowledge = () => {
 
                 <Grid item sx={{ height: '80%', width: { md: '50%'} }} gap={2} display='flex' >
                     <Grid  container direction='column' gap={8} justifyContent='center' alignItems='center'>
+                        <Paper sx={{ width: '80%', height: { md: '31%', xxl: '20%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9, display: { xs: 'none', md: 'flex' } }}  >
+                                <Typography variant="subtitle1" color='primary.light'>
+                                    Udemy, Online — Certificación JavaScript - TypeScript - Node - React - Next - Vue (in progress)
+                                    <br />
+                                    2023, Online
+                                    <br />
+                                    Data Types - Objects - Operators - Cycles - ESNext - Classes - 
+                                    Private properties - Node - Npm - Installing packages in JavaScript projects - Promises - 
+                                    Callbacks - CRUD - File upload - Fetch - Generating functions - Vite - Mappers
+                                </Typography>
+                        </Paper>
                         <Paper sx={{ width: '80%', height: { md: '31%', xs: '80%', xxl: '20%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9 }}  >
                             <Typography variant={ isMd ? "subtitle1" : 'body2' } color='primary.light'>
-                                Digital House, Online — Certified Tech Developer
+                                01/2022 - 01/2023
                                 <br />
-                                EN CURSO, Online
+                                VIAJERO HOSTELS - MIAMI FL / Front Desk
                                 <br />
-                                Cursando actualmente en la modalidad part-time dos materias bimestrales.
-                                Materias aprobadas: Front End 1 - Introducción a la Informática - Metodologías de Trabajo - Programación Imperativa - Base de datos 1 - 
-                                Programacion orientada a objetos - Testing 1 - Taller Design Thinking
+                                Customer Support.
+                                <br />
+                                Reception of guests to check-in or check-out if their stay has ended.
+                                <br />
+                                Solving problems or inconveniences within the building, answering calls, emails, WhatsApp messages, whether to make questions or make a reservation.
                             </Typography>
                         </Paper>
-                        <Paper sx={{ width: '80%', height: { md: '31%', xxl: '20%' }, backgroundColor: 'background.default', padding: 2, borderRadius: 10, opacity: 0.9, display: { xs: 'none', md: 'flex' } }}  >
-                            <Typography variant="subtitle1" color='primary.light'>
-                                Udemy, Online — Certificación JavaScript - TypeScript - Node - React - Next - React Native (en curso)
-                                <br />
-                                2023, Online
-                                <br />
-                                Tipos de datos - Objetos - Operadores - Ciclos - ESNext - Clases - 
-                                Propiedades privadas - Node - Npm - Instalación de paquetes en proyectos de JavaScript - Promesas - 
-                                Callbacks - CRUD - Carga de archivos - Fetch - Funciones generadoras - Vite - Mappers
-                            </Typography>
-                        </Paper>
+                        
 
                     </Grid>
                 </Grid>

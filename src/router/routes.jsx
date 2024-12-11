@@ -1,4 +1,4 @@
-import { Navigate, createBrowserRouter, createHashRouter } from "react-router-dom";
+import { Navigate, createHashRouter } from "react-router-dom";
 import { ErrorPage } from "../ui/pages/ErrorPage";
 import { AboutMe, Home, Knowledge, Projects } from "../views";
 import { Welcome } from "../views/Welcome";
