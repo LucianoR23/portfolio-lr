@@ -8,10 +8,22 @@ export const infoImg = [
         description: "A complete online store, with login and registration, with the ability to place orders and pay for them (no charge, sandbox mode), and has an administrator area for user maintenance, orders and products (admin@admin.com - 123456).",
     },
     {
+        img: '../../images/biblia-app.jpg',
+        title: 'Bible App - Vue',
+        url: 'https://biblia-catolica.netlify.app/',
+        description: "An app to pray the Holy Rosary and to search for book chapters in the Bible, I created it quickly in two days because I made it especially to help my grandmother because she was tired of ads. You can add it to your cell phone's home screen, although it is not made for all screen sizes.",
+    },
+    {
         img: '../../images/pokemon-static.jpg',
         title: 'Pokemon Static - Next',
         url: 'https://pokemon-static-lemy.vercel.app/',
         description: "A pokedex style website is only made for one region although it is possible to search for other pokemon by modifying the url, you can enter the page of each pokemon and see its description and also change between light theme and dark theme.",
+    },
+    {
+        img: '../../images/pokemon-game.jpg',
+        title: 'Pokemon Game - Vue',
+        url: 'https://github.com/LucianoR23/pokemon-game',
+        description: "A pokemon game, similar to the one in the original series. It has 3 levels of difficulty, it is made so that Pokémon are not repeated, it has animations and a timer.",
     },
     {
         img: '../../images/task-manager.jpg',
